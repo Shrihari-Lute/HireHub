@@ -1,18 +1,26 @@
+/* ----------------------------------------- */
+/*           Basic App Styles                 */
+/* ----------------------------------------- */
+
+/* Main app container centered text */
 .App {
   text-align: center;
 }
 
+/* App logo styling */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+/* Animate logo rotation only if user allows motion */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* infinite slow spin */
   }
 }
 
+/* Header container for app */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,10 +32,21 @@
   color: white;
 }
 
+/* Links inside the app */
 .App-link {
   color: #61dafb;
 }
 
+/* Body background override */
+body {
+  background-color: #eef6f6 !important;
+}
+
+/* ----------------------------------------- */
+/*           Animation Keyframes              */
+/* ----------------------------------------- */
+
+/* Continuous rotation for logo */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +54,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ----------------------------------------- */
+/*          Custom Text Colors                 */
+/* ----------------------------------------- */
+
+/* White text */
+.text-white-custom {
+  color: #ffffff !important;
+}
+
+/* Yellow accent text (similar to Bootstrap yellow-500) */
+.text-accent-custom {
+  color: #ffc107 !important;
+}
+
+/* Red highlight text for important emphasis */
+.text-highlight-custom {
+  color: #f6090d !important;
+}
+
+/* ----------------------------------------- */
+/*          Custom Background Colors           */
+/* ----------------------------------------- */
+
+/* Solid black background */
+.bg-black-custom {
+  background-color: #000000 !important;
+}
+
+/* Solid white background */
+.bg-white-custom {
+  background-color: #ffffff !important;
+}
+
+/* Yellow accent background (same as yellow-500) */
+.bg-accent-custom {
+  background-color: #ffc107 !important;
+}
+
+/* ----------------------------------------- */
+/*               Border Utilities              */
+/* ----------------------------------------- */
+
+/* Yellow accent border */
+.border-accent-custom {
+  border: 1px solid #ffc107 !important;
+}
+
+/* ----------------------------------------- */
+/*              Hover Effects                   */
+/* ----------------------------------------- */
+
+/* On hover: background changes to yellow, text to black */
+.hover-bg-accent-custom:hover {
+  background-color: #ffc107 !important;
+  color: #000000 !important;
+  cursor: pointer;
+}
+
+/* On hover: text changes to yellow accent */
+.hover-text-accent-custom:hover {
+  color: #ffc107 !important;
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/*              Button Styles                   */
+/* ----------------------------------------- */
+
+/* Dark-themed button with white text and border */
+.btn-theme-custom {
+  background-color: #282c34;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Yellow accent button with black text and no border */
+.btn-accent-custom {
+  background-color: #ffc107;
+  color: #000000;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* On hover: darker yellow background for accent button */
+.btn-accent-custom:hover {
+  background-color: #f59f00; /* yellow-700 */
+  cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/*               Glass Effect                   */
+/* ----------------------------------------- */
+
+/* Glass-like translucent container with blur and red border */
+.glass-effect {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.6);
+  width: fit-content; /* shrink to fit content */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 1rem;
 }
