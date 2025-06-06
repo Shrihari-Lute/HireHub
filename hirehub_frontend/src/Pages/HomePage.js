@@ -3,6 +3,8 @@ import Header from "../Components/Header/Header.jsx";
 import DreamJob from "../Components/LandingPage/DreamJob.jsx";
 import Companies from "../Components/LandingPage/Companies.jsx";
 import JobCategory from "../Components/LandingPage/JobCategory.jsx";
+import Testimonial from "../Components/LandingPage/Testimonial.jsx";
+import Footer from "../Components/Footer/Footer.jsx";
 
 const HomePage = () => {
   return (
@@ -17,6 +19,10 @@ const HomePage = () => {
       <Companies />
 
       <JobCategory />
+
+      <Testimonial />
+
+      <Footer />
     </div>
   );
 };

@@ -120,6 +120,10 @@ body {
   cursor: pointer;
 }
 
+.hover-highlight-custom:hover {
+  color: #f6090d !important;
+}
+
 /* ----------------------------------------- */
 /*              Button Styles                   */
 /* ----------------------------------------- */

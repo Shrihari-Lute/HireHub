@@ -31,7 +31,7 @@ const Header = () => {
       <div className="d-flex align-items-center gap-3 text-white-custom">
         {/* Profile label and user avatar side by side */}
         <div className="d-flex align-items-center gap-2">
-          <span>Profile</span>
+          <span className="hover-accent-custom">Profile</span>
           {/* Avatar showing user image */}
           <Avatar src="/Avatars/avatar.png" alt="User Avatar" />
         </div>

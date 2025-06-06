@@ -16,12 +16,12 @@ const RecruiterNavLinks = () => {
       {/* Map over the links array to generate NavLink components */}
       {links.map((link, index) => (
         <NavLink
-          key={index} // Unique key for React rendering
+          key={index}
           to={link.url} // Route to navigate to on click
           className={({ isActive }) =>
             // Dynamic class: highlight active link with accent color,
             // otherwise white text color
-            `text-decoration-none ${
+            `text-decoration-none hover-accent-custom ${
               isActive ? "accent-custom" : "text-white-custom"
             }`
           }
