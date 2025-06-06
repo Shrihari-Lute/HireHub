@@ -15,8 +15,8 @@
 //           to={link.url}
 //           className={({ isActive }) =>
 //             `text-decoration-none ${
-//               isActive ? "text-accent-custom" : "text-white-custom"
-//             } hover-text-accent-custom`
+//               isActive ? "accent-custom" : "text-white-custom"
+//             } hover-accent-custom`
 //           }
 //         >
 //           {link.name}

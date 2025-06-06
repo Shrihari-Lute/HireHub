@@ -66,12 +66,12 @@ body {
 }
 
 /* Yellow accent text (similar to Bootstrap yellow-500) */
-.text-accent-custom {
+.accent-custom {
   color: #ffc107 !important;
 }
 
 /* Red highlight text for important emphasis */
-.text-highlight-custom {
+.highlight-custom {
   color: #f6090d !important;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 /* On hover: text changes to yellow accent */
-.hover-text-accent-custom:hover {
+.hover-accent-custom:hover {
   color: #ffc107 !important;
   cursor: pointer;
 }
@@ -159,4 +159,34 @@ body {
   border: 2px solid red;
   border-radius: 12px;
   padding: 1rem;
+}
+
+.company-logo {
+  height: 100px;
+  object-fit: contain;
+  background-color: transparent;
+  /* padding: 10px; */
+  /* border-radius: 8px; */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  /* margin: 50px; */
+}
+
+.job-card {
+  transition: all 0.3s ease;
+  border: 1px solid #000;
+}
+
+.job-card:hover {
+  background-color: #d8f6f6;
+  box-shadow: 0 8px 20px rgba(40, 44, 52, 0.3);
+  cursor: pointer;
+}
+
+.job-card img {
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover img {
+  transform: scale(1.05);
 }

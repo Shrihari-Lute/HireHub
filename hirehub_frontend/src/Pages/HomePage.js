@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../Components/Header/Header.jsx";
 import DreamJob from "../Components/LandingPage/DreamJob.jsx";
+import Companies from "../Components/LandingPage/Companies.jsx";
+import JobCategory from "../Components/LandingPage/JobCategory.jsx";
 
 const HomePage = () => {
   return (
@@ -11,6 +13,10 @@ const HomePage = () => {
 
       {/* Main Content Section: Displays the landing page content */}
       <DreamJob />
+
+      <Companies />
+
+      <JobCategory />
     </div>
   );
 };

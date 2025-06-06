@@ -22,7 +22,7 @@ const RecruiterNavLinks = () => {
             // Dynamic class: highlight active link with accent color,
             // otherwise white text color
             `text-decoration-none ${
-              isActive ? "text-accent-custom" : "text-white-custom"
+              isActive ? "accent-custom" : "text-white-custom"
             }`
           }
         >
