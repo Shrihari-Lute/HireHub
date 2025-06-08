@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HireHub/static/css/main.8b56b1bf.css",
+    "main.js": "/HireHub/static/js/main.5c5b69e2.js",
+    "static/js/453.852e0500.chunk.js": "/HireHub/static/js/453.852e0500.chunk.js",
+    "index.html": "/HireHub/index.html",
+    "main.8b56b1bf.css.map": "/HireHub/static/css/main.8b56b1bf.css.map",
+    "main.5c5b69e2.js.map": "/HireHub/static/js/main.5c5b69e2.js.map",
+    "453.852e0500.chunk.js.map": "/HireHub/static/js/453.852e0500.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b56b1bf.css",
+    "static/js/main.5c5b69e2.js"
+  ]
+}
