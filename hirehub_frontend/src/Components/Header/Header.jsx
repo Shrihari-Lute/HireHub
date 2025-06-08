@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="w-100 bg-black-custom accent-custom px-4 py-3 d-flex justify-content-between align-items-center">
+    <div className="w-100 bg-black accent-custom px-4 py-3 d-flex justify-content-between align-items-center">
       {/* Logo and Title Section */}
       {/* Clicking the logo redirects to homepage ("/") */}
       <Link
@@ -28,7 +28,7 @@ const Header = () => {
       {/* <ApplicantNavLinks /> */}
 
       {/* Profile Section */}
-      <div className="d-flex align-items-center gap-3 text-white-custom">
+      <div className="d-flex align-items-center gap-3 text-white">
         {/* Profile label and user avatar side by side */}
         <div className="d-flex align-items-center gap-2">
           <span className="hover-accent-custom">Profile</span>
