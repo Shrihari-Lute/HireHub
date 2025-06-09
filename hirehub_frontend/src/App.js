@@ -1,6 +1,8 @@
 import React from "react";
 
 import "./App.css";
+import "./Styles/custom.css";
+import "./Styles/custom.scss";
 
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
