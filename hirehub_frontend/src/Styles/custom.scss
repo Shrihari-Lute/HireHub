@@ -4,15 +4,15 @@
 
 $hirehub-colors: (
   "red": (
-    100: #ffebee,
-    200: #ffcdd2,
-    300: #ef9a9a,
-    400: #e57373,
-    500: #d32f2f,
-    600: #c62828,
-    700: #b71c1c,
-    800: #9a0007,
-    900: #7f0000,
+    100: #ffdfdd,
+    200: #ffc4c0,
+    300: #ff9b94,
+    400: #ff6257,
+    500: #ff3223,
+    600: #ff1100,
+    700: #d70e00,
+    800: #b10f03,
+    900: #92130a,
   ),
   "yellow": (
     100: #fffde7,
@@ -96,6 +96,10 @@ $hirehub-colors: (
     // Background color utility
     .bg-#{$color-name}-#{$shade} {
       background-color: $color-value !important;
+    }
+
+    .border-#{$color-name}-#{$shade} {
+      border: 1px solid $color-value !important;
     }
   }
 }

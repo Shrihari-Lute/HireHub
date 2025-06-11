@@ -99,7 +99,7 @@ const MultiInput = ({ title, icon: Icon, options }) => {
                 {value.length > 1 && <Pill>+{value.length - 1} more</Pill>}
               </>
             ) : (
-              <Input.Placeholder className="ms-1 ">{title}</Input.Placeholder>
+              <Input.Placeholder className="ms-1">{title}</Input.Placeholder>
             )}
           </Pill.Group>
         </PillsInput>

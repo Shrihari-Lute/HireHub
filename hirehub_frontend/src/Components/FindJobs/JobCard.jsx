@@ -1,5 +1,3 @@
-
-
 import { Divider, Text } from "@mantine/core";
 import { IconBookmark, IconClock } from "@tabler/icons-react";
 import React from "react";
@@ -24,7 +22,7 @@ const JobCard = (props) => {
           <div>
             <div className="fw-semibold">{props.jobTitle}</div>
             <div className="text-muted">
-              {props.company} &#x2022; {props.applicant}
+              {props.company} &#x2022; {props.applicants} Applicants
             </div>
           </div>
         </div>

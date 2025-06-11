@@ -126,3 +126,8 @@
   width: 30px;
   height: 30px;
 }
+
+
+.text-justify {
+  text-align: justify !important;
+}
