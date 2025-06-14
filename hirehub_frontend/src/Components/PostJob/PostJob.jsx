@@ -39,14 +39,14 @@ const PostJob = () => {
       <div className="mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-end">
         <Button
           variant="outline"
-          className="text-black bg-green-300"
+          className="text-black btn-green-300"
           color="green"
         >
           Publish Job
         </Button>
         <Button
           variant="outline"
-          className="text-black bg-yellow-300"
+          className="text-black btn-yellow-300"
           color="yellow"
         >
           Save as Draft

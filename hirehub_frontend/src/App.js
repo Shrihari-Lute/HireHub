@@ -20,6 +20,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import TalentProfilePage from "./Pages/TalentProfilePage";
 import PostJobPage from "./Pages/PostJobPage";
+import JobDescriptionPage from "./Pages/JobDescriptionPage";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
 
           {/* Route to Find Talent Page */}
           <Route path="/find-talent" element={<FindTalentPage />} />
+
+          <Route path="/jobs" element={<JobDescriptionPage />} />
 
           <Route path="/talent-profile" element={<TalentProfilePage />} />
 

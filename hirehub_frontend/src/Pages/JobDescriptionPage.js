@@ -1,19 +1,16 @@
-
-
 import { Button } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import Profile from "../Components/TalentProfile/Profile";
-import { profile } from "../Data/TalentData";
-import RecommendTalent from "../Components/TalentProfile/RecommendTalent";
+import JobDescription from "../Components/JobDescription/JobDescription";
+import RecommendedJob from "../Components/JobDescription/RecommendedJob";
 
-const TalentProfilePage = () => {
+const JobDescriptionPage = () => {
   return (
     <div className="container-fluid min-vh-100 p-4">
       {/* Back Button */}
       <div className="mb-4">
-        <Link to="/find-talent" className="text-decoration-none">
+        <Link to="/find-jobs" className="text-decoration-none">
           <Button
             leftSection={<IconArrowLeft size={20} />}
             variant="outline"
@@ -28,14 +25,14 @@ const TalentProfilePage = () => {
       {/* Responsive Layout: Profile + Recommended */}
       <div className="row g-4">
         <div className="col-12 col-lg-8">
-          <Profile {...profile} />
+          <JobDescription />
         </div>
         <div className="col-12 col-lg-4">
-          <RecommendTalent />
+          <RecommendedJob />
         </div>
       </div>
     </div>
   );
 };
 
-export default TalentProfilePage;
+export default JobDescriptionPage;

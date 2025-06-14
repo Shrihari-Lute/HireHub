@@ -83,6 +83,10 @@ $hirehub-colors: (
 
     .bg-#{$color-name}-#{$shade} {
       background-color: $color-value !important;
+    }
+
+    .btn-#{$color-name}-#{$shade} {
+      background-color: $color-value !important;
       color: #000 !important;
 
       // Hover: use next darker shade if available, else darken
@@ -94,6 +98,23 @@ $hirehub-colors: (
           background-color: darken($color-value, 5%) !important;
         }
         color: #000 !important;
+      }
+    }
+
+    .icon-#{$color-name}-#{$shade} {
+      stroke: $color-value !important;
+      // fill: $color-value !important;
+      transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
+
+      &:hover {
+        $next-shade: $shade + 100;
+        @if map-has-key($shades, $next-shade) {
+          stroke: map-get($shades, $next-shade) !important;
+          fill: map-get($shades, $next-shade) !important;
+        } @else {
+          stroke: darken($color-value, 8%) !important;
+          fill: darken($color-value, 8%) !important;
+        }
       }
     }
 
