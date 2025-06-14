@@ -1,8 +1,8 @@
 import React from "react";
-import SearchBar from "../Components/FindJobs/SearchBar";
-import JobsSection from "../Components/FindJobs/JobsSection";
+import SearchBar from "../Components/FindJob/SearchBar";
+import JobsSection from "../Components/FindJob/JobsSection";
 
-const FindJobsPage = () => {
+const FindJobPage = () => {
   return (
     <div className="min-vh-100">
       <SearchBar />
@@ -11,4 +11,4 @@ const FindJobsPage = () => {
   );
 };
 
-export default FindJobsPage;
+export default FindJobPage;

@@ -1,6 +1,6 @@
 import { Divider, Input } from "@mantine/core";
 import { searchFields } from "../../Data/TalentData";
-import MultiInput from "../FindJobs/MultiInput";
+import MultiInput from "../FindJob/MultiInput";
 import { IconUserCircle } from "@tabler/icons-react";
 
 const SearchBar = () => {

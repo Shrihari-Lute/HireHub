@@ -5,10 +5,11 @@ import "./Styles/custom.css";
 import "./Styles/custom.scss";
 
 import "@mantine/core/styles.css";
+import "@mantine/tiptap/styles.css";
 import "@mantine/carousel/styles.css";
 
 import HomePage from "./Pages/HomePage";
-import FindJobsPage from "./Pages/FindJobsPage";
+import FindJobPage from "./Pages/FindJobsPage";
 import FindTalentPage from "./Pages/FindTalentPage";
 
 import Header from "./Components/Header/Header";
@@ -18,6 +19,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { MantineProvider } from "@mantine/core";
 import TalentProfilePage from "./Pages/TalentProfilePage";
+import PostJobPage from "./Pages/PostJobPage";
 
 function App() {
   return (
@@ -31,12 +33,14 @@ function App() {
         {/* Define application routes */}
         <Routes>
           {/* Route to Find Jobs Page */}
-          <Route path="/find-jobs" element={<FindJobsPage />} />
+          <Route path="/find-jobs" element={<FindJobPage />} />
 
           {/* Route to Find Talent Page */}
           <Route path="/find-talent" element={<FindTalentPage />} />
 
           <Route path="/talent-profile" element={<TalentProfilePage />} />
+
+          <Route path="/post-jobs" element={<PostJobPage />} />
 
           {/* Default fallback route - loads Home Page for any undefined path */}
           <Route path="*" element={<HomePage />} />

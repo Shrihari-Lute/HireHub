@@ -1,5 +1,5 @@
 import { talents } from "../../Data/TalentData";
-import Sort from "../FindJobs/Sort";
+import Sort from "../FindJob/Sort";
 import TalentCard from "./TalentCard";
 
 const TalentSection = () => {
